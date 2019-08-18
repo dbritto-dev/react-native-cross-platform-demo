@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Platform, StyleSheet, Text, Button, View } from 'react-native';
 import * as Print from './expo-agnostic/expo-print';
 import * as Facebook from './expo-agnostic/expo-facebook';
@@ -20,6 +20,8 @@ const instructions = Platform.select({
 });
 
 function App() {
+  useEffect(() => console.log('using hooks'), []);
+
   return (
     <View style={styles.container}>
       <Text style={styles.welcome}>Welcome to React Native!</Text>
