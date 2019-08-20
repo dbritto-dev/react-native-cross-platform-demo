@@ -9,7 +9,7 @@ declare type FacebookOptions = {
   behavior?: 'web' | 'native' | 'browser' | 'system';
 };
 
-export {};
+export { FacebookOptions, FacebookLoginResult };
 
 export declare function logInWithReadPermissionsAsync(
   appId: string,
