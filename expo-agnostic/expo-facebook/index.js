@@ -1,6 +1,6 @@
 import ExpoFacebook from './ExpoFacebook';
 
-export const logInWithReadPermissionsAsync = async (appId, { permissions, behavior } = {}) => {
+export const logInWithReadPermissionsAsync = async (appId, { permissions, behaviour } = {}) => {
   if (typeof appId !== 'string') {
     console.warn(
       `logInWithReadPermissionsAsync: parameter 'appId' must be a string, was '${typeof appId}''.`
@@ -10,6 +10,6 @@ export const logInWithReadPermissionsAsync = async (appId, { permissions, behavi
 
   return ExpoFacebook.logInWithReadPermissionsAsync(appId, {
     permissions,
-    behavior,
+    behaviour,
   });
 };
